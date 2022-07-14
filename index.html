@@ -1,36 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <header class="container px-4 mx-auto">
-        <div class="text-center mt-2">
-            <h1 class="text-xl font-bold underline">Let's Collaborate with GitHub!</h1>
-            <h3 class="text-xl font-bold mt-4 text-purple-500">Using Git allows developers to review code, address issues, and discuss projects!</h3>
+<html lang="en-CA">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- GOOGLE FONTS -->
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+        <!-- STYLESHEETS -->
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- FAVICON -->
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="aimages/favicon/pple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="images/favicon/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+        <!-- META TAGS -->
+        <meta name="description" content="Anita Lam is a Front-end Developer. She is currently attending the New Media Design and Web Development Program at BCIT and is looking forward to starting an intership in Fall 2022.">
+        <meta name="og:title" content="Anita Lam Front-End Developer | Vancouver Front-end Developer">
+        <meta name="og:site_name" content="Anita Lam Portfolio">
+        <meta name="og:url" content="https://anitalam.ca">
+        <meta name="og:image" content="images/anitalam.jpg">
+    </head>
+    <body>
+        <div class="theme-wrapper">
+            <header>
+                <div class="logo">
+                    <a class="logo-link" href="index.html" title="Anita Lam's Portfolio">
+                        <img src="images/anita-lam-logo.svg" alt="Anita Lam's web developer logo">
+                    </a>
+                </div>
+                <button class="gn-trigger">
+                    <div class="burger"></div>
+                </button>
+                <nav class="gn">
+                    <ul class="gn-items">
+                        <li><a href="index.html#projects" class="item" title="All of my projects">Projects</a></li>
+                        <li><a href="about.html" class="item" title="About Anita Lam">About</a></li>
+                        <li><a href="index.html#ftr" class="item" title="Connect with to Anita Lam">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section class="bnr">
+                    <img class="waving" src="images/waving-hand.png" alt="">
+                    <div class="bnr-content">
+                        <h1>I'm Anita Lam!<br>A Front-end Developer<br>building ideas on the<br>web from scratch.</h1>
+                        <a class="view-my-projects-btn" href="#projects">View projects</a>
+                    </div>
+                </section>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="card_container">
+                        <div class="project-card-wrapper">
+                            <div class="project_card">
+                                <img class="project" src="images/thebujoguide.jpg" alt="Web development project on a guide about bullet journaling.">
+                                <div class="card_overlay">
+                                    <!-- <div class="projectitle">THE BUJO GUIDE</div> -->
+                                    <div class="view-btn">
+                                        <a class="view-site" href="artifact01/index.html" target="_blank">View Site</a>
+                                        <a class="view-code" href="https://github.com/anitaalam/the-bujo-guide" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectitle">THE BUJO GUIDE</div>
+                            <p class="project-description">A guide to bullet journaling &verbar; Responsive website</p>
+                        </div>
+                        <div class="project-card-wrapper">
+                            <div class="project_card">
+                                <img class="project" src="images/mp3player.png" alt="MP3 Player creating using HTML, CSS, and JavaScript.">
+                                <div class="card_overlay">
+                                    <!-- <div class="projectitle">MP3 PLAYER</div> -->
+                                    <div class="view-btn">
+                                        <a class="view-site" href="artifact02/index.html" target="_blank">View Demo</a>
+                                        <a class="view-code" href="https://github.com/anitaalam/mp3-player" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectitle">MP3 PLAYER</div>
+                            <p class="project-description">Korean Playlist &verbar; HTML &verbar; CSS &verbar; JavaScript</p>
+                        </div>
+                        <div class="project-card-wrapper">
+                            <div class="project_card">
+                                <img class="project" src="images/animations.jpg" alt="Animations created using HTML,CSS, JavaScript, and GSAP.">
+                                <div class="card_overlay">
+                                    <div class="view-btn">
+                                        <a class="view-site" href="artifact03/index.html" target="_blank">View Demo</a>
+                                        <a class="view-code" href="https://github.com/anitaalam/animations" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projectitle">ANIMATIONS</div>
+                            <p class="project-description">Collections of animations &verbar; JavaScript &verbar; GSAP</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <section id="ftr">
+                    <div class="contact">
+                        <a href="https://www.linkedin.com/in/anitawylam/" target="_blank">
+                            <i class=" fa fa-linkedin-square"></i>
+                        </a>
+                        <a href="mailto:anitawingyeelam@gmail.com" target="_blank">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/anitaalam" target="_blank">
+                            <i class=" fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="copy">
+                        <p>&copy; 2022 Anita Lam</p>
+                    </div>
+                </section>
+            </footer>
         </div>
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Cards -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-4 mt-6">
-        <div class="rounded shadow p-4">
-            <h3 class="text-lg font-bold">Step 1.</h3>
-            <p>Create a project using git.</p>
-        </div>
-        <div class="rounded shadow p-4">
-            <h3 class="text-lg font-bold">Step 2.</h3>
-            <p>Push commits to GitHub.</p>
-        </div>
-        <div class="rounded shadow p-4">
-            <h3 class="text-lg font-bold">Step 3.</h3>
-            <p>Pull down other developers commits 🎉.</p>
-        </div>
-    </section>
-    <!-- End Cards -->
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/19559f3672.js" crossorigin="anonymous"></script>
+        <script src="scripts/scroll-lock.js"></script>
+        <script src="scripts/main.js"></script>
+    </body>
 </html>
